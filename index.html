@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Alex Garcia" />
+    <link rel="stylesheet" type="text/css" href="/dist/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/dist/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main class="main__card">
+      <div class="main__container">
+        <figure class="starImg">
+          <img src="/images/icon-star.svg" alt="Star Image" />
+        </figure>
+        <h1 class="main__title">How did we do?</h1>
+        <p class="main__body">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="card__list">
+          <li>
+            <button class="card__item">1</button>
+          </li>
+          <li>
+            <button class="card__item">2</button>
+          </li>
+          <li>
+            <button class="card__item">3</button>
+          </li>
+          <li>
+            <button class="card__item">4</button>
+          </li>
+          <li>
+            <button class="card__item">5</button>
+          </li>
+        </ul>
+        <button class="card-submit__button">SUBMIT</button>
+      </div>
+    </main>
+
+    <article class="card__results hidden">
+      <figure class="results__img">
+        <img src="/images/illustration-thank-you.svg" alt="Thank You Image" />
+      </figure>
+      <p class="results__rating">
+        You selected
+        <span id="rating"></span>
+        out of 5
+      </p>
+      <h1 class="results__title">Thank you!</h1>
+      <p class="results__body">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don&#39;t hesitate to get in touch!
+      </p>
+    </article>
+    <script src="script.js"></script>
+  </body>
+</html>
