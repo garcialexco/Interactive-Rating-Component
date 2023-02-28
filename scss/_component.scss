@@ -47,7 +47,7 @@ body {
   line-height: 1.4em;
 }
 
-.card__list {
+.rating__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,23 +56,27 @@ body {
   padding: 0;
 }
 
+fieldset {
+  border: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
 .card__item {
   background-color: $buttonGrey;
   color: inherit;
   border: none;
   border-radius: 50%;
   margin: 0;
+  margin-bottom: 1em;
   padding: 1.1em 1.5em;
   font-family: inherit;
   font-size: 0.75em;
 }
 
 .card__item:hover {
-  transition: background-color 0.2s ease-in-out;
-}
-
-.clicked {
-  background-color: $lightGrey;
   transition: background-color 0.2s ease-in-out;
 }
 

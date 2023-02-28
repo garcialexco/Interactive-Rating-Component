@@ -23,39 +23,78 @@
   <body>
     <main class="main__card">
       <div class="main__container">
-        <figure class="starImg">
-          <img src="/images/icon-star.svg" alt="Star Image" />
-        </figure>
+        <div class="starImg">
+          <img src="/images/icon-star.svg" />
+        </div>
         <h1 class="main__title">How did we do?</h1>
         <p class="main__body">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <ul class="card__list">
-          <li>
-            <button class="card__item">1</button>
-          </li>
-          <li>
-            <button class="card__item">2</button>
-          </li>
-          <li>
-            <button class="card__item">3</button>
-          </li>
-          <li>
-            <button class="card__item">4</button>
-          </li>
-          <li>
-            <button class="card__item">5</button>
-          </li>
-        </ul>
-        <button class="card-submit__button">SUBMIT</button>
+        <form class="main__form" id="ratings__form">
+          <fieldset class="rating__container">
+            <div class="card__item">
+              <input
+                type="radio"
+                class="ratings"
+                name="rating"
+                id="one"
+                value="1"
+              />
+              <label for="one" class="rating__number">1</label>
+            </div>
+            <div class="card__item">
+              <input
+                type="radio"
+                class="ratings"
+                name="rating"
+                id="two"
+                value="2"
+              />
+              <label for="two" class="rating__number">2</label>
+            </div>
+            <div class="card__item">
+              <input
+                type="radio"
+                class="ratings"
+                name="rating"
+                id="three"
+                value="3"
+              />
+              <label for="three" class="rating__number">3</label>
+            </div>
+            <div class="card__item">
+              <input
+                type="radio"
+                class="ratings"
+                name="rating"
+                id="four"
+                value="4"
+              />
+              <label for="fpur" class="rating__number">4</label>
+            </div>
+            <div class="card__item">
+              <input
+                type="radio"
+                class="ratings"
+                name="rating"
+                id="five"
+                value="5"
+              />
+              <label for="five" class="rating__number">5</label>
+            </div>
+          </fieldset>
+          <button class="card-submit__button" id="card__submit" type="submit">
+            SUBMIT
+          </button>
+        </form>
       </div>
     </main>
 
-    <article class="card__results hidden">
-      <figure class="results__img">
-        <img src="/images/illustration-thank-you.svg" alt="Thank You Image" />
-      </figure>
+    <div class="card__results hidden">
+      <div class="results__img">
+        <img src="/images/illustration-thank-you.svg" />
+      </div>
       <p class="results__rating">
         You selected
         <span id="rating"></span>
@@ -66,7 +105,7 @@
         We appreciate you taking the time to give a rating. If you ever need
         more support, don&#39;t hesitate to get in touch!
       </p>
-    </article>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
