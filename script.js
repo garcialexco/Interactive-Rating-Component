@@ -2,7 +2,18 @@ const mainCard = document.querySelector(".main__card");
 const cardResults = document.querySelector(".card__results");
 const cardItems = document.querySelectorAll(".card__item");
 const cardSubmit = document.querySelector(".card-submit__button");
-const rating = document.getElementById("rating");
+const ratingsForm = document.getElementById("ratings__form");
+const submitButton = document.getElementById("card__submit");
+const ratingResult = document.getElementById("rating");
+
+ratingsForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const selectedRating = document.querySelector('input[name="rating"]:checked');
+  ratingResult.innerText = selectedRating.value;
+
+  cardResults.classList.remove("hidden");
+});
 
 cardSubmit.addEventListener("click", function () {
   cardResults.classList.remove("hidden");
